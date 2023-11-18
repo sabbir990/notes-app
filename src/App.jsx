@@ -8,7 +8,7 @@ import Header from './components/Header';
 export default function App() {
   const [searchedValue, setSearchedValue] = useState('');
   const [notes, setNotes] = useState([]);
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState();
 
   const getTask = (value) => {
     if (value.trim().length > 0) {
