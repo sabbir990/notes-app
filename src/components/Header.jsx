@@ -10,7 +10,7 @@ export default function Header({togglebg}) {
   return (
     <div className='header-parent'>
         <h1>Notes</h1>
-        <button onClick={handleToggleClick}>Toggle</button>
+        <button onClick={handleToggleClick}>{blackToggle ? "Enable Dark Mode" : "Disable Dark Mode"}</button>
     </div>
   )
 }

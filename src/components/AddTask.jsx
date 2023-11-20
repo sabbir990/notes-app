@@ -21,7 +21,7 @@ export default function AddTask({getTask}) {
     }
   return (
     <div className='addTask-parent'>
-        <textarea cols="10" rows="6" placeholder='your task here' onChange={handleNewTaskChange} value={addTask}/>
+        <textarea cols="10" rows="6" placeholder='your task here' onChange={handleNewTaskChange} value={addTask} style={{resize : 'none'}}/>
         <div>
             <small>{remainingCharecter - addTask.trim().length} Remaining</small>
             <button onClick={handleAddTaskSave}>Save</button>
